@@ -20,3 +20,5 @@ func connect(host: String) -> (Int) -> ((Void) -> Void) {
 
 	}
 }
+
+connect(host: "localhost")(80)()
