@@ -21,4 +21,12 @@ func connect(host: String) -> (Int) -> ((Void) -> Void) {
 	}
 }
 
-connect(host: "localhost")(80)()
+let localConnector = connect(host: "localhost")
+
+localConnector(80)
+
+localConnector(8000)
+
+let remoteConnector = connect(host: "mihost.com")(8888)
+
+remoteConnector()
