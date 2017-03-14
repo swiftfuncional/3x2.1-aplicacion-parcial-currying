@@ -21,6 +21,12 @@ func connect(host: String) -> (Int) -> ((Void) -> Void) {
 	}
 }
 
+func connect(host: String, port: Int) -> ((Void) -> Void) {
+	return {
+		//Here, we have to do our conexion logic
+	}
+}
+
 let localConnector = connect(host: "localhost")
 
 localConnector(80)
