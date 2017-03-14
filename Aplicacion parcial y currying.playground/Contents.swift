@@ -36,3 +36,5 @@ localConnector(8000)
 let remoteConnector = connect(host: "mihost.com")(8888)
 
 remoteConnector()
+
+connect(host: "localhost", port: 80)
