@@ -1,13 +1,5 @@
 class Connector {
-	func connect(host: String, port: Int) {
+	func connect(host: String = "localhost", port: Int = 80) {
 		//Here, we have to do our conexion logic
-	}
-
-	func connect(host: String) {
-		connect(host: host, port: 80)
-	}
-
-	func connect() {
-		connect(host: "localhost")
 	}
 }
