@@ -12,7 +12,7 @@ class Connector {
 	}
 }
 
-func connect(host: String) -> (Int) -> ((Void) -> Void) {
+func connect(host: String) -> (Int) -> (() -> Void) {
 	return { port in
 		return {
 			//Here, we have to do our conexion logic
@@ -21,7 +21,7 @@ func connect(host: String) -> (Int) -> ((Void) -> Void) {
 	}
 }
 
-func connect(host: String, port: Int) -> ((Void) -> Void) {
+func connect(host: String, port: Int) -> (() -> Void) {
 	return {
 		//Here, we have to do our conexion logic
 	}
